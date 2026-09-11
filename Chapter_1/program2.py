@@ -1,15 +1,17 @@
-number1= int(input("Enter number 1: "))
-number2= int(input("Enter number 2: "))
+# 1. Ask the user for two numbers
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
 
-sum = number1 + number2
-print(f"Sum of {number1} and {number2} is {sum}")
+# 2. Print a nice header
+print("\n--- CALCULATOR RESULTS ---")
 
-difference = number1 - number2
-print(f"Difference of {number1} and {number2} is {difference}")
+# 3. Perform and print each arithmetic operation
+print("Addition:       ", num1, "+", num2, "=", num1 + num2)
+print("Subtraction:    ", num1, "-", num2, "=", num1 - num2)
+print("Multiplication: ", num1, "*", num2, "=", num1 * num2)
+print("Division:       ", num1, "/", num2, "=", num1 / num2)
+print("Floor Division: ", num1, "//", num2, "=", num1 // num2)
+print("Modulus (Rem.): ", num1, "%", num2, "=", num1 % num2)
+print("Exponentiation: ", num1, "**", num2, "=", num1 ** num2)
 
-product= number1 * number2
-print(f"Product of {number1} and {number2} is {product}")
-
-quotient= number1 / number2
-print(f"Quotient of {number1} and {number2} is {quotient:0.2f}")
-
+print("--------------------------")
