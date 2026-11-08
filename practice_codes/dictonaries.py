@@ -1,16 +1,11 @@
 countries={
-    "India":"New Delhi",
-    "USA":"Washington DC",
-    "UK":"London"
+    "India": "New Delhi",
+    "USA": "Washington D.C.",
+    "Japan": "Tokyo",
 }
-countries["China"]="xin chao"
-countries["Japan"]="Tokyo"
-your_country=input("Enter your country name: ")
+countries.update({"Germany": "Berlin"})
 
-if your_country in countries:
-    print("The capital of ur country is:", countries.get(your_country))
+print(countries.get("Germany"))
+countries.pop("USA")
 
-else:
-    print("Your country isnt in the list")
-
-print(countries.get("India"))
+print(countries)

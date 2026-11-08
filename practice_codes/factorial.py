@@ -1,7 +1,13 @@
-num = int(input("Enter a positive number: "))
-factorial = 1
+n = int(input("Enter a number: ")) 
 
-for i in range(1, num + 1):
-    factorial *= i
+def sumN(n): 
+    if n < 0: 
+        return "Sum is not defined for negative numbers." 
+    elif n == 0: 
+        return 0 
+    else: 
+        return sumN(n - 1) + n 
 
-print("Factorial:", factorial)
+tom = sumN(n) 
+print(f"the sum of {n} is {tom}")
+    

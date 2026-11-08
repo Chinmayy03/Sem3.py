@@ -1,2 +1,2 @@
-pi=3.14159
-print(f"PI value is {pi:0.2f}")
+with open("sample.txt", "w") as file:
+    file.write("Python is a versatile programming language that is widely used for web development, data analysis, artificial intelligence, and more. It has a simple syntax that makes it easy to learn and use, making it a popular choice for beginners and experienced developers alike.")
